@@ -8,6 +8,8 @@ st.markdown('''
 Shown are the stock price data for query companies!
 ''')
 st.write('---')
+def favicon():
+return send_from_directory(os.path.join(app.root_path, 'static'),'favicon.ico', mimetype='favicon.png')
 st.sidebar.subheader('Query parameters')
 start_date = st.sidebar.date_input("Start date", datetime.date(2020, 1, 1))
 end_date = st.sidebar.date_input("End date", datetime.date(2021, 1, 31))
