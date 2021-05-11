@@ -1,1 +1,1 @@
-web: sh setup.sh && gunicorn streamlit run main.py
+web: gunicorn sh setup.sh && streamlit run main.py
